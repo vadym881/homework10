@@ -9,7 +9,7 @@ def some_gen(begin, end, func):
      func: функція, яка формує значення для послідовності
     """
     current = begin
-    for chr in range(end):
+    for _ in range(end):
         yield current
         current = func(current)
 
